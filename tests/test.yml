@@ -1,0 +1,9 @@
+policies:
+- name: tencentcloud-cvm
+  resource: tencentcloud.cvm
+  filters:
+    - type: value
+      key: InstanceType
+      op: in
+      value:
+        - S1.SMALL1

@@ -1,0 +1,66 @@
+{
+  "policy": {
+    "name": "tencentcloud-subnet",
+    "resource": "tencentcloud.subnet"
+  },
+  "version": "0.9.42",
+  "execution": {
+    "id": "76956519-1044-4537-8376-913d6b1fb58d",
+    "start": 1736159542.1865358,
+    "end_time": 1736159542.842589,
+    "duration": 0.6560530662536621
+  },
+  "config": {
+    "region": "ap-chongqing",
+    "regions": [],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": null,
+    "assume_role": null,
+    "session_policy": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "output",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "test2.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2025-01-06T18:32:22.841708",
+      "Value": 4,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2025-01-06T18:32:22.841720",
+      "Value": 0.653954029083252,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2025-01-06T18:32:22.842580",
+      "Value": 1.9073486328125e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

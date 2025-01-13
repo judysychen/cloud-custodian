@@ -1,0 +1,5 @@
+policies:
+- name: tencentcloud-cvm1
+  resource: tencentcloud.cvm
+  filters:
+    - "tag:test_sychen": "123"

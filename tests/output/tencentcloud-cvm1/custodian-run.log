@@ -1,0 +1,28 @@
+2025-01-03 15:00:00,430 - custodian.policy - DEBUG - Running policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing c7n:0.9.42
+2025-01-03 15:00:01,099 - custodian.resources.cvm - DEBUG - Filtered from 1 to 0 cvm
+2025-01-03 15:00:01,099 - custodian.policy - INFO - policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing count:0 time:0.67
+2025-01-03 15:00:01,100 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:tencentcloud-cvm1 restype:tencentcloud.cvm scope:policy
+2025-01-03 15:53:12,399 - custodian.policy - DEBUG - Running policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing c7n:0.9.42
+2025-01-03 15:53:13,045 - custodian.resources.cvm - DEBUG - Filtered from 1 to 0 cvm
+2025-01-03 15:53:13,046 - custodian.policy - INFO - policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing count:0 time:0.65
+2025-01-03 15:53:13,047 - custodian.output - DEBUG - metric:ResourceCount Count:0 policy:tencentcloud-cvm1 restype:tencentcloud.cvm scope:policy
+2025-01-03 15:57:29,779 - custodian.policy - DEBUG - Running policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing c7n:0.9.42
+2025-01-03 15:57:30,576 - custodian.resources.cvm - DEBUG - Filtered from 1 to 1 cvm
+2025-01-03 15:57:30,576 - custodian.policy - INFO - policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing count:1 time:0.80
+2025-01-03 15:57:30,578 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:tencentcloud-cvm1 restype:tencentcloud.cvm scope:policy
+2025-01-03 17:18:25,621 - custodian.policy - DEBUG - Running policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing c7n:0.9.42
+2025-01-03 17:18:26,327 - custodian.resources.cvm - DEBUG - Filtered from 1 to 1 cvm
+2025-01-03 17:18:26,327 - custodian.policy - INFO - policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing count:1 time:0.70
+2025-01-03 17:18:26,330 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:tencentcloud-cvm1 restype:tencentcloud.cvm scope:policy
+2025-01-03 18:23:55,438 - custodian.policy - DEBUG - Running policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing c7n:0.9.42
+2025-01-03 18:23:56,056 - custodian.resources.cvm - DEBUG - Filtered from 1 to 1 cvm
+2025-01-03 18:23:56,057 - custodian.policy - INFO - policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing count:1 time:0.62
+2025-01-03 18:23:56,061 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:tencentcloud-cvm1 restype:tencentcloud.cvm scope:policy
+2025-01-06 09:59:53,058 - custodian.policy - DEBUG - Running policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing c7n:0.9.42
+2025-01-06 09:59:53,730 - custodian.resources.cvm - DEBUG - Filtered from 1 to 1 cvm
+2025-01-06 09:59:53,730 - custodian.policy - INFO - policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing count:1 time:0.67
+2025-01-06 09:59:53,732 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:tencentcloud-cvm1 restype:tencentcloud.cvm scope:policy
+2025-01-06 10:27:03,086 - custodian.policy - DEBUG - Running policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing c7n:0.9.42
+2025-01-06 10:27:03,780 - custodian.resources.cvm - DEBUG - Filtered from 1 to 1 cvm
+2025-01-06 10:27:03,781 - custodian.policy - INFO - policy:tencentcloud-cvm1 resource:tencentcloud.cvm region:ap-chongqing count:1 time:0.69
+2025-01-06 10:27:03,784 - custodian.output - DEBUG - metric:ResourceCount Count:1 policy:tencentcloud-cvm1 restype:tencentcloud.cvm scope:policy
