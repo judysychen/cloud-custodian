@@ -1,0 +1,90 @@
+[
+  {
+    "Placement": {
+      "Zone": "ap-chongqing-1",
+      "HostId": null,
+      "ProjectId": 0
+    },
+    "InstanceId": "ins-ci88a59w",
+    "Uuid": "24f1b3cd-e10a-4069-b943-496bb88c43d9",
+    "OperatorUin": "200040230681",
+    "InstanceState": "RUNNING",
+    "RestrictState": "NORMAL",
+    "InstanceType": "S5.MEDIUM2",
+    "CPU": 2,
+    "Memory": 2,
+    "InstanceName": "sy-test",
+    "InstanceChargeType": "POSTPAID_BY_HOUR",
+    "SystemDisk": {
+      "DiskType": "CLOUD_BSSD",
+      "DiskId": "disk-cx6c6w0q",
+      "DiskSize": 50,
+      "Encrypt": false,
+      "KmsKeyId": null,
+      "ThroughputPerformance": 0,
+      "CdcId": null
+    },
+    "DataDisks": [],
+    "PrivateIpAddresses": [
+      "192.168.0.16"
+    ],
+    "PublicIpAddresses": [
+      "162.14.194.32"
+    ],
+    "IPv6Addresses": null,
+    "InternetAccessible": {
+      "InternetMaxBandwidthOut": 5,
+      "InternetChargeType": "TRAFFIC_POSTPAID_BY_HOUR"
+    },
+    "VirtualPrivateCloud": {
+      "VpcId": "vpc-2pn1wzch",
+      "SubnetId": "subnet-a5t0pfii",
+      "AsVpcGateway": false
+    },
+    "SecurityGroupIds": [
+      "sg-5tjka9rs"
+    ],
+    "LoginSettings": {
+      "KeyIds": null
+    },
+    "ImageId": "img-487zeit5",
+    "DefaultLoginUser": "ubuntu",
+    "DefaultLoginPort": 22,
+    "RenewFlag": null,
+    "CreatedTime": "2025-01-02T07:20:00Z",
+    "ExpiredTime": null,
+    "UnderwriteExpiredTime": null,
+    "Tags": [
+      {
+        "tagKey": "test_sychen",
+        "tagValue": "123",
+        "Key": "test_sychen",
+        "Value": "123"
+      }
+    ],
+    "PlatformProjectId": null,
+    "DisasterRecoverGroupId": "",
+    "DedicatedClusterId": "",
+    "CamRoleName": "",
+    "LatestOperation": "ModifyInstancesAttribute.InstanceName",
+    "LatestOperationState": "SUCCESS",
+    "LatestOperationRequestId": "267ec67e-3413-4af0-ab31-56cad48206ff",
+    "IsolatedSource": "NOTISOLATED",
+    "ChcInstanceType": "",
+    "HpcClusterId": "",
+    "DisableApiTermination": false,
+    "RdmaIpAddresses": null,
+    "VmEniTrunking": "off",
+    "OsName": "Ubuntu Server 22.04 LTS 64\u4f4d",
+    "LicenseType": "TencentCloud",
+    "StopChargingMode": "NOT_APPLICABLE",
+    "ImageType": "PUBLIC_IMAGE",
+    "InstanceFamily": "S5",
+    "LatestOperationErrorMsg": null,
+    "BootMode": "Legacy BIOS",
+    "EnableGridLicence": "",
+    "c7n:MatchedFilters": [
+      "tag:test_sychen"
+    ]
+  }
+]

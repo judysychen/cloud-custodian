@@ -1,0 +1,35 @@
+2025-01-06 11:15:48,352 - custodian.policy - DEBUG - Running policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing c7n:0.9.42
+2025-01-06 11:15:48,869 - custodian.output - DEBUG - metric:PolicyException Count:1 policy:tencentcloud-subnet restype:tencentcloud.subnet
+2025-01-06 11:15:48,870 - custodian.output - ERROR - Error while executing policy
+Traceback (most recent call last):
+  File "/Users/chensiying/cloud-custodian/cloud-custodian/c7n/policy.py", line 330, in run
+    resources = self.policy.resource_manager.resources()
+  File "/Users/chensiying/cloud-custodian/cloud-custodian/tools/c7n_tencentcloud/c7n_tencentcloud/query.py", line 305, in resources
+    resources = self.source.resources(params)
+  File "/Users/chensiying/cloud-custodian/cloud-custodian/tools/c7n_tencentcloud/c7n_tencentcloud/query.py", line 168, in resources
+    self.augment(res)
+  File "/Users/chensiying/cloud-custodian/cloud-custodian/tools/c7n_tencentcloud/c7n_tencentcloud/query.py", line 175, in augment
+    return self.get_resource_tag(resources)
+  File "/Users/chensiying/cloud-custodian/cloud-custodian/tools/c7n_tencentcloud/c7n_tencentcloud/query.py", line 182, in get_resource_tag
+    resource_map = dict(zip(self.get_resource_qcs(resources), resources))
+  File "/Users/chensiying/cloud-custodian/cloud-custodian/tools/c7n_tencentcloud/c7n_tencentcloud/query.py", line 209, in get_resource_qcs
+    r[self.resource_type.id])
+KeyError: 'SubnetIds'
+2025-01-06 11:15:59,812 - custodian.policy - DEBUG - Running policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing c7n:0.9.42
+2025-01-06 11:16:00,553 - custodian.resources.subnet - DEBUG - Filtered from 4 to 4 subnet
+2025-01-06 11:16:00,553 - custodian.policy - INFO - policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing count:4 time:0.74
+2025-01-06 11:16:00,556 - custodian.output - DEBUG - metric:ResourceCount Count:4 policy:tencentcloud-subnet restype:tencentcloud.subnet scope:policy
+2025-01-06 14:31:46,701 - custodian.policy - DEBUG - Running policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing c7n:0.9.42
+2025-01-06 14:31:47,306 - custodian.resources.subnet - DEBUG - Filtered from 4 to 4 subnet
+2025-01-06 14:31:47,306 - custodian.policy - INFO - policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing count:4 time:0.61
+2025-01-06 14:31:47,307 - custodian.output - DEBUG - metric:ResourceCount Count:4 policy:tencentcloud-subnet restype:tencentcloud.subnet scope:policy
+2025-01-06 14:37:42,327 - custodian.policy - DEBUG - Running policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing c7n:0.9.42
+2025-01-06 14:37:43,046 - custodian.resources.subnet - DEBUG - Filtered from 4 to 4 subnet
+2025-01-06 14:37:43,046 - custodian.policy - INFO - policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing count:4 time:0.72
+2025-01-06 14:37:43,046 - custodian.output - DEBUG - metric:ResourceCount Count:4 policy:tencentcloud-subnet restype:tencentcloud.subnet scope:policy
+2025-01-06 16:01:35,780 - custodian.policy - DEBUG - Running policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing c7n:0.9.42
+2025-01-06 16:01:36,491 - custodian.resources.subnet - DEBUG - Filtered from 4 to 4 subnet
+2025-01-06 16:01:36,492 - custodian.policy - INFO - policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing count:4 time:0.71
+2025-01-06 16:01:36,494 - custodian.output - DEBUG - metric:ResourceCount Count:4 policy:tencentcloud-subnet restype:tencentcloud.subnet scope:policy
+2025-01-06 18:07:57,183 - custodian.policy - INFO - policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing count:4 time:0.68
+2025-01-06 18:32:22,841 - custodian.policy - INFO - policy:tencentcloud-subnet resource:tencentcloud.subnet region:ap-chongqing count:4 time:0.65

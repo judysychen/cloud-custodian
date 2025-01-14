@@ -1,0 +1,3 @@
+policies:
+- name: tencentcloud-subnet
+  resource: tencentcloud.subnet

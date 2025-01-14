@@ -1,0 +1,122 @@
+[
+  {
+    "VpcId": "vpc-2pn1wzch",
+    "SubnetId": "subnet-a5t0pfii",
+    "SubnetName": "zjcq00",
+    "CidrBlock": "192.168.0.0/24",
+    "Ipv6CidrBlock": "",
+    "ISPType": "",
+    "AddressType": "",
+    "IsDefault": false,
+    "IsRemoteVpcSnat": false,
+    "EnableBroadcast": false,
+    "Zone": "ap-chongqing-1",
+    "RouteTableId": "rtb-bqsbxm8m",
+    "NetworkAclId": "",
+    "HighPriorityRouteTableId": "",
+    "TotalIpAddressCount": 253,
+    "AvailableIpAddressCount": 252,
+    "CreatedTime": "2023-12-11 20:02:39",
+    "TagSet": [],
+    "LocalZone": false,
+    "IsShare": false,
+    "GatewaySet": [
+      {
+        "Address": "192.168.0.1"
+      }
+    ],
+    "CdcId": "",
+    "IsCdcSubnet": 0,
+    "Region": "ap-chongqing"
+  },
+  {
+    "VpcId": "vpc-2qn80itx",
+    "SubnetId": "subnet-ih9qphig",
+    "SubnetName": "zcqj-sub02",
+    "CidrBlock": "10.0.0.0/16",
+    "Ipv6CidrBlock": "",
+    "ISPType": "",
+    "AddressType": "",
+    "IsDefault": false,
+    "IsRemoteVpcSnat": false,
+    "EnableBroadcast": false,
+    "Zone": "ap-chongqing-1",
+    "RouteTableId": "rtb-eujs1yj8",
+    "NetworkAclId": "",
+    "HighPriorityRouteTableId": "",
+    "TotalIpAddressCount": 65533,
+    "AvailableIpAddressCount": 65533,
+    "CreatedTime": "2022-03-18 14:54:43",
+    "TagSet": [],
+    "LocalZone": false,
+    "IsShare": false,
+    "GatewaySet": [
+      {
+        "Address": "10.0.0.1"
+      }
+    ],
+    "CdcId": "",
+    "IsCdcSubnet": 0,
+    "Region": "ap-chongqing"
+  },
+  {
+    "VpcId": "vpc-2qn80itx",
+    "SubnetId": "subnet-rl7bof7k",
+    "SubnetName": "zcqj-sub01",
+    "CidrBlock": "10.1.0.0/16",
+    "Ipv6CidrBlock": "",
+    "ISPType": "",
+    "AddressType": "",
+    "IsDefault": false,
+    "IsRemoteVpcSnat": false,
+    "EnableBroadcast": false,
+    "Zone": "ap-chongqing-1",
+    "RouteTableId": "rtb-eujs1yj8",
+    "NetworkAclId": "",
+    "HighPriorityRouteTableId": "",
+    "TotalIpAddressCount": 65533,
+    "AvailableIpAddressCount": 65531,
+    "CreatedTime": "2022-03-18 14:54:10",
+    "TagSet": [],
+    "LocalZone": false,
+    "IsShare": false,
+    "GatewaySet": [
+      {
+        "Address": "10.1.0.1"
+      }
+    ],
+    "CdcId": "",
+    "IsCdcSubnet": 0,
+    "Region": "ap-chongqing"
+  },
+  {
+    "VpcId": "vpc-qioh59bp",
+    "SubnetId": "subnet-netcfx0m",
+    "SubnetName": "Default-Subnet",
+    "CidrBlock": "172.30.0.0/20",
+    "Ipv6CidrBlock": "",
+    "ISPType": "",
+    "AddressType": "",
+    "IsDefault": true,
+    "IsRemoteVpcSnat": false,
+    "EnableBroadcast": false,
+    "Zone": "ap-chongqing-1",
+    "RouteTableId": "rtb-dq1vsbp2",
+    "NetworkAclId": "",
+    "HighPriorityRouteTableId": "",
+    "TotalIpAddressCount": 4093,
+    "AvailableIpAddressCount": 4093,
+    "CreatedTime": "2021-03-25 15:41:05",
+    "TagSet": [],
+    "LocalZone": false,
+    "IsShare": false,
+    "GatewaySet": [
+      {
+        "Address": "172.30.0.1"
+      }
+    ],
+    "CdcId": "",
+    "IsCdcSubnet": 0,
+    "Region": "ap-chongqing"
+  }
+]
