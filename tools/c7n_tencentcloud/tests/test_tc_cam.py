@@ -345,12 +345,11 @@ class TestCAM(BaseTest):
                         "match-operator": "or"
                     }
                 ]
-            },
-            account_id=100002098531
+            }
         )
         resources = policy.run()
-        assert len(resources) == 1
-        assert resources[0]["PolicyId"] == 141753149
+        assert len(resources) == 5
+        assert resources[0]["PolicyId"] == 236096053
 
     @pytest.mark.vcr
     def test_policy_used(self):

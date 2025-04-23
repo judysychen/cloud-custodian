@@ -405,19 +405,33 @@ class Policy(QueryResourceManager):
 
         # in tencentcloud both "*" and "*:*" mean all resources/services
         # here we only use "*:*"
-        for s in resource["PolicyDocument"]["statement"]:
-            if "action" in s:
-                actions = s["action"]
+        if isinstance(resource["PolicyDocument"]["statement"], list):
+            for s in resource["PolicyDocument"]["statement"]:
+                if "action" in s:
+                    actions = s["action"]
+                    if isinstance(actions, str):
+                        # to do more: convert to list
+                        if actions == "*":
+                            s["action"] = ["*:*"]
+                        else:
+                            s["action"] = [actions]
+                    if isinstance(actions, list):
+                        for idx, act in enumerate(s["action"]):
+                            if act == "*":
+                                s["action"][idx] = "*:*"
+        elif isinstance(resource["PolicyDocument"]["statement"], dict):
+            if "action" in resource["PolicyDocument"]["statement"].keys():
+                actions = resource["PolicyDocument"]["statement"]["action"]
                 if isinstance(actions, str):
                     # to do more: convert to list
                     if actions == "*":
-                        s["action"] = ["*:*"]
+                        resource["PolicyDocument"]["statement"]["action"] = ["*:*"]
                     else:
-                        s["action"] = [actions]
+                        resource["PolicyDocument"]["statement"]["action"] = [actions]
                 if isinstance(actions, list):
-                    for idx, act in enumerate(s["action"]):
+                    for idx, act in enumerate(resource["PolicyDocument"]["statement"]["action"]):
                         if act == "*":
-                            s["action"][idx] = "*:*"
+                            resource["PolicyDocument"]["statement"]["action"][idx] = "*:*"
 
 
 @Policy.filter_registry.register('has-allow-all')
@@ -529,11 +543,20 @@ class CheckPermissions(Filter):
             statements = resource["PolicyDocument"]["statement"]
             matched_statements = []
             matched_flags = []
-            for s in statements:
-                if (matcher(s) and
-                        actions.issubset(s["action"])):
+            if isinstance(statements, list):
+                for s in statements:
+                    if (matcher(s) and
+                            actions.issubset(s["action"])):
+                        # match and actions are both ok
+                        matched_statements.append(s)
+                        matched_flags.append(True)
+                    else:
+                        matched_flags.append(False)
+            elif isinstance(statements, dict):
+                if (matcher(statements) and
+                        actions.issubset(statements["action"])):
                     # match and actions are both ok
-                    matched_statements.append(s)
+                    matched_statements.append(statements)
                     matched_flags.append(True)
                 else:
                     matched_flags.append(False)
