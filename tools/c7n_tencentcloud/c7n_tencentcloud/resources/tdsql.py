@@ -3,26 +3,28 @@
 from c7n_tencentcloud.provider import resources
 from c7n_tencentcloud.query import ResourceTypeInfo, QueryResourceManager
 from c7n_tencentcloud.utils import PageMethod, isoformat_datetime_str
-from c7n.filters.core import Filter
 import pytz
-from c7n.utils import type_schema
 
 
 @resources.register("tdsql")
 class TDSQL(QueryResourceManager):
     """
-        TDSQL-C for MySQL: It combines the strengths of traditional databases, cloud computing,
-        and cutting-edge hardware technologies to provide elastically scalable database services featuring
-        high performance, security, and reliability, as well as full compatibility with MySQL 5.7 and 8.0.
-        https://www.tencentcloud.com/document/product/1098/40615
+        TDSQL for MySQL: TDSQL for MySQL is a distributed database service
+        deployed in Tencent Cloud that supports automatic sharding (horizontal splitting)
+        and the Shared Nothing architecture.
+        https://www.tencentcloud.com/document/product/1042/33311
 
         :example:
 
         .. code-block:: yaml
 
             policies:
-            - name: tdsql-check
+            - name: check-tdsql
               resource: tencentcloud.tdsql
+              filters:
+                - type: value
+                  key: InstanceId
+                  value: tdsqlshard-123456
         """
 
     class resource_type(ResourceTypeInfo):
